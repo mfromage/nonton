@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CastCollectionViewCell" customModule="Nonton" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jwz-fg-1IQ">
+                        <rect key="frame" x="104.5" y="16" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jwz-fg-1IQ" secondAttribute="height" multiplier="1:1" id="kSo-dG-pZr"/>
+                            <constraint firstAttribute="width" constant="50" id="laF-fj-4GH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a Person Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dl-dF-KMT">
+                        <rect key="frame" x="0.0" y="70" width="259" height="126"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7Dl-dF-KMT" firstAttribute="top" secondItem="jwz-fg-1IQ" secondAttribute="bottom" constant="4" id="4Br-u5-Bel"/>
+                <constraint firstAttribute="bottom" secondItem="7Dl-dF-KMT" secondAttribute="bottom" id="85J-5o-UGo"/>
+                <constraint firstAttribute="trailing" secondItem="7Dl-dF-KMT" secondAttribute="trailing" id="DfE-dh-9UN"/>
+                <constraint firstItem="7Dl-dF-KMT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QJ7-G5-wzm"/>
+                <constraint firstItem="jwz-fg-1IQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bZQ-Qq-ab9"/>
+                <constraint firstItem="jwz-fg-1IQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="mqW-dL-zPQ"/>
+            </constraints>
+            <size key="customSize" width="259" height="196"/>
+            <connections>
+                <outlet property="nameLabel" destination="7Dl-dF-KMT" id="Gah-mb-jnV"/>
+                <outlet property="profileImageView" destination="jwz-fg-1IQ" id="aPD-v8-0mP"/>
+            </connections>
+            <point key="canvasLocation" x="138.5" y="127"/>
+        </collectionViewCell>
+    </objects>
+</document>

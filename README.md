@@ -1,2 +1,3 @@
-# nonton
-Sample Reactive Swift using MVVM
+**Nonton iOS**
+
+MVVM using RXSwift sample app
